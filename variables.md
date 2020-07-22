@@ -14,3 +14,5 @@
 - **Undefined**
 
 - **Object**
+
+- **Symbol**
