@@ -16,3 +16,23 @@
 - **Object**
 
 - **Symbol** для уникальных идентификаторов
+
+
+
+### Отличия VAR и LET
+- let, в отличии от var, не создает свойства на глобальном объекте window
+
+```javascript
+let a = 10;
+var b = 10;
+console.log(window.a); // undefined
+console.log(window.b); // 10
+```
+
+- При обращении к let до объявления будет ошибка в консоли
+```javascript
+console.log(a);
+console.log(b);
+var a;
+let b;
+```
