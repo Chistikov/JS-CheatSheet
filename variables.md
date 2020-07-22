@@ -39,6 +39,16 @@ let b;
 ```
 
 - Let переменные видны только из блока, где они объявлены
+```javascript
+function letTest() {
+  let x = 1;
+  if (true) {
+    let x = 2;  // другая переменная
+    console.log(x);  // 2
+  }
+  console.log(x);  // 1
+}
+```
 
 - Повторное объявление let переменной в одном блоке приведет к ошибке.
 ```javascript
