@@ -37,3 +37,13 @@ console.log(b); //error
 var a;
 let b;
 ```
+
+- Let переменные видны только из блока, где они объявлены
+
+- Повторное объявление let переменной в одном блоке приведет к ошибке.
+```javascript
+if (x) {
+  let foo;
+  let foo; // SyntaxError thrown.
+}
+```
