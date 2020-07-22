@@ -1,1 +1,3 @@
-# JS CheatSheet
+# **JS CheatSheet**
+
+### [Переменные](variables.md)
